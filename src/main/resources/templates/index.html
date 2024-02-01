@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Form</title>
+</head>
+<body>
+    <h1>User Input Form</h1>
+    <form action="register" method="post">
+        <label for="user_name">UserName :</label><br>
+        <input type="text" name="username" placeholder="Enter your username"/>
+		<br>
+		
+		<label for="full_name">Full Name :</label><br>
+        <input type="text" name="name" placeholder="Enter your name"/>
+		<br>
+		
+        <label for="user_email">Email :</label><br>
+        <input type="email" name="email" placeholder="Enter your Email"/><br>
+        
+        <label for="user_dob">DoB :</label><br>
+        <input type="date" name="dob" placeholder="Enter DoB"/><br>
+        
+        <label for="user_password">Password :</label><br>
+        <input type="password" name="password" placeholder="Enter password"/><br>
+        
+        <label for="gender">Gender :</label><br>
+        <select name="gender">
+			<option value=""></option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+		<br>
+		<br>
+		
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
